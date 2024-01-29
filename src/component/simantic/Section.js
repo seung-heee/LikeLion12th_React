@@ -1,10 +1,13 @@
 import React from 'react';
 
-const Section = () => {
+const Section = (props) => {
+    console.log(props)
+    
     return (
-        <div>
-            section
-        </div>
+        <>
+            <div>안녕하세요 저는 {props.name}입니다.</div>
+            <div>제가 제일 좋아하는 전은 {props.food}입니다.</div>
+        </>
     );
 };
 
