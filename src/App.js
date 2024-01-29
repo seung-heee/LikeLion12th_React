@@ -1,4 +1,5 @@
 import Event from "./component/Event";
+import Counter from "./component/state/Counter";
 import Aside from "./component/simantic/Aside";
 import Footer from "./component/simantic/Footer";
 import Header from "./component/simantic/Header";
@@ -12,6 +13,7 @@ function App() {
   return (
     <div className="App">
       <Event />
+      <Counter />
     </div>
   );
 }
