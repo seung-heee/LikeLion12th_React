@@ -1,5 +1,6 @@
 import Event from "./component/Event";
 import Counter from "./component/state/Counter";
+import Input from "./component/state/Input";
 import Aside from "./component/simantic/Aside";
 import Footer from "./component/simantic/Footer";
 import Header from "./component/simantic/Header";
@@ -13,7 +14,10 @@ function App() {
   return (
     <div className="App">
       <Event />
+      <hr />
       <Counter />
+      <hr />
+      <Input />
     </div>
   );
 }
