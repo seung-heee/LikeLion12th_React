@@ -2,12 +2,15 @@ import React from 'react';
 import '../css/styles.css'
 
 const Event = () => {
-    function handleOnClick () {
-        alert('반갑습니다')
+    function handleOnClick (e) {
+        console.log(e)
+        console.log(e.target)
+        console.log(e.target.value)
     }
     return (
         <div className='Event'>
-            <button onClick={handleOnClick}>버튼을 클릭하세요!</button>
+            <button value="Hello" onClick={handleOnClick}>Hello 버튼</button>
+            <button value="Bye" onClick={handleOnClick}>Bye 버튼</button>
         </div>
     );
 };
