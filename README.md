@@ -10,8 +10,8 @@ create-react-app <프로젝트 명>
 ---
 
 ## 불필요한 파일 삭제
-public 폴더 : index.html 남기고 모두 제거
-src 폴더 : index.js / App.js 남기고 모두 제거
+* public 폴더 : index.html 남기고 모두 제거
+* src 폴더 : index.js / App.js 남기고 모두 제거
 
 ---
 
