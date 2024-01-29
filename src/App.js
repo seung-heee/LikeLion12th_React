@@ -1,3 +1,4 @@
+import Event from "./component/Event";
 import Aside from "./component/simantic/Aside";
 import Footer from "./component/simantic/Footer";
 import Header from "./component/simantic/Header";
@@ -10,12 +11,7 @@ function App() {
 
   return (
     <div className="App">
-      {/* 코드 조각 모음 */}
-      <Header />
-      <Nav />
-      <Section name={name} food={food}/>
-      <Aside />
-      <Footer />
+      <Event />
     </div>
   );
 }
