@@ -11,9 +11,11 @@ import { useState } from "react";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(true)
+  const [name, setName] = useState('홍길동')
+  const [studentId, setStudentId] = useState(24)
 
   return (
-    <Greeting isLoggedIn={isLoggedIn} />
+    <Greeting isLoggedIn={isLoggedIn} name={name} studentId={studentId}  />
   );
 }
 
