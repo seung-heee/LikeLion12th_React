@@ -6,19 +6,14 @@ import Footer from "./component/simantic/Footer";
 import Header from "./component/simantic/Header";
 import Nav from "./component/simantic/Nav";
 import Section from "./component/simantic/Section";
+import Greeting from "./component/conditionalRendering/Greeting";
+import { useState } from "react";
 
 function App() {
-  const name = '홍길동'
-  const food = '홍길동전'
+  const [isLoggedIn, setIsLoggedIn] = useState(true)
 
   return (
-    <div className="App">
-      <Event />
-      <hr />
-      <Counter />
-      <hr />
-      <Input />
-    </div>
+    <Greeting isLoggedIn={isLoggedIn} />
   );
 }
 
