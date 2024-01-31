@@ -10,7 +10,7 @@ import Greeting from "./component/conditionalRendering/Greeting";
 import { useState } from "react";
 
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false)
+  const [isLoggedIn, setIsLoggedIn] = useState(true)
   const [name, setName] = useState('홍길동')
   const [studentId, setStudentId] = useState(24)
 
