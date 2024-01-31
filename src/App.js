@@ -1,13 +1,7 @@
-import Event from "./component/Event";
-import Counter from "./component/state/Counter";
-import Input from "./component/state/Input";
-import Aside from "./component/simantic/Aside";
-import Footer from "./component/simantic/Footer";
-import Header from "./component/simantic/Header";
-import Nav from "./component/simantic/Nav";
-import Section from "./component/simantic/Section";
 import Greeting from "./component/conditionalRendering/Greeting";
 import { useState } from "react";
+import './css/styles.css'
+import Ref from "./component/Ref";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(true)
@@ -15,8 +9,8 @@ function App() {
   const [studentId, setStudentId] = useState(24)
 
   return (
-    <Greeting isLoggedIn={isLoggedIn} name={name} studentId={studentId}  />
-  );
+      <Ref />
+    );
 }
 
 export default App;

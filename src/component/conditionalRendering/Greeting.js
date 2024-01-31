@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import UserGreeting from './UserGreeting';
 import GuestGreeting from './GuestGreeting';
 
 const Greeting = ({ isLoggedIn, name, studentId }) => {
-
     if(isLoggedIn) {
         return <UserGreeting name={name} studentId={studentId} />
     }
@@ -12,4 +11,4 @@ const Greeting = ({ isLoggedIn, name, studentId }) => {
     }
 };
 
-export default Greeting;
+export default Greeting

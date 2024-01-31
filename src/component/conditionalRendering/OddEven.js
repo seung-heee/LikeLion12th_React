@@ -5,7 +5,7 @@ const OddEven = () => {
 
     return (
         <div>
-            {num}은 {num % 2 == 0 ? '짝수' : '홀수'}입니다.        
+            {num}은(는) {num % 2 === 0 ? '짝수' : '홀수'}입니다.        
         </div>
     );
 };
