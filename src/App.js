@@ -1,16 +1,17 @@
-import Greeting from "./component/conditionalRendering/Greeting";
 import { useState } from "react";
-import './css/styles.css'
-import Ref from "./component/Ref";
+import Greeting from "./component/conditionalRendering/Greeting";
+import UserGreeting from "./component/conditionalRendering/UserGreeting";
+import GuestGreeting from "./component/conditionalRendering/GuestGreeting";
+import CollegeList from "./component/arrayRendering/CollegeList";
 
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(true)
-  const [name, setName] = useState('홍길동')
-  const [studentId, setStudentId] = useState(24)
+  const [yes, setYes] = useState();
 
   return (
-      <Ref />
-    );
+    <div className="App">
+      <CollegeList />
+    </div>
+  );
 }
 
 export default App;

@@ -7,7 +7,6 @@ const Ref = () => {
     function handleOnChange(e) {
         setText(e.target.value);
     }
-    
     function handleOnClick() {
         if (text.length < 5) {
             textRef.current.focus();
@@ -17,7 +16,6 @@ const Ref = () => {
             setText("");
         }
     }
-    
     return (
         <div>
             <input ref={textRef} type="text" value={text} onChange={handleOnChange} />
