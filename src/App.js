@@ -1,15 +1,19 @@
-import { useState } from "react";
-import Greeting from "./component/conditionalRendering/Greeting";
-import UserGreeting from "./component/conditionalRendering/UserGreeting";
-import GuestGreeting from "./component/conditionalRendering/GuestGreeting";
-import CollegeList from "./component/arrayRendering/CollegeList";
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import Introduce from "./pages/Introduce";
+import Project from "./pages/Project";
+import About from "./pages/About";
 
 function App() {
-  const [yes, setYes] = useState();
 
   return (
     <div className="App">
-      <CollegeList />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/introduce' element={<Introduce />} />
+        <Route path='/project' element={<Project />} />
+        <Route path='/about' element={<About />} />
+      </Routes>
     </div>
   );
 }
